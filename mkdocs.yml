@@ -1,0 +1,30 @@
+site_name: Reach RTK docs
+theme_dir: docstheme
+site_favicon: favicon.ico
+repo_url: https://github.com/emlid/reach-docs
+pages:
+- Reach: index.md
+- Introduction: introduction.md
+- Roadmap: roadmap.md
+- Kit contents: kit-contents.md
+- Quickstart: quickstart.md
+- Power supply: power-supply.md
+- Antenna placement: antenna-placement.md
+- ReachView app basics: reachview-basics.md
+- Rover configuration: reachview-rover.md
+- Setting up correction link: reachview-link.md
+- Solution output and logging: reachview-output.md
+- Monitoring status: reachview-status.md
+- Base configuration: reachview-base.md
+- Hardware integration: hardware-integration.md
+- ArduPilot integration: ardupilot-integration.md
+- GPS post-processing: gps-post-processing.md
+- Camera integration: camera-integration.md
+- PylonGPS: pylon-gps.md
+- Firmware reflashing: firmware-reflashing.md
+- Electrical specs: electrical-specs.md
+- Mechanical specs: mechanical-specs.md
+- Software development: software-development.md
+- Troubleshooting: troubleshooting.md
+- FAQ: faq.md
+- Changelogs: changelogs.md
