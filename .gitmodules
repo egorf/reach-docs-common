@@ -1,0 +1,3 @@
+[submodule "docstheme"]
+	path = docstheme
+	url = git@github.com:emlid/docstheme.git

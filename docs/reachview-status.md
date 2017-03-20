@@ -1,33 +1,53 @@
-#### Viewing results
+This is the main dashboard with all information about position and satellite reception.
 
-**Status** tab is the place to monitor current state of the positioning solution. First thing you see is a chart showing rover's satellite levels. Good reception of the satellite signal is essential for RTK technology to be able to produce a good positioning solution. This chart is intended to help with antenna placement. If you are in mode that involves base corrections and the input is setup correctly, you will see base satellite levels as well. The grid above the chart shows current state as the current positioning mode, solution status and coordinates in llh format.
+### Satellite SNR chart
 
-The solution status value (simply labeled **status** in the grid) is the key value you can see here. After you have started the rover, you will be able to get the following solution statuses (probably in this order):
+RTK positioning requires excellent reception of signals from GNSS satellites. SNR (Signal to Noise Ratio) is the primary indicator of how good the reception is. The graph lists all satellites that fit in your screen size and corresponding SNR. Data is updated in real-time.
 
-* **"-"**. This means there is not information for the software to process. Either not enough time has passed or the antenna is poorly placed
-* **single**. This is usually the state that follows **"-"** in RTK mode. **Single** means that rover has found a solution relying on its own receiver and base corrections are not taken into consideration yet. If rover is started in single mode, this will also be the result
-* **float**. The base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved
-* **fixed**. Positioning is relative to the base and the integer ambiguity is properly resolved. This is as good as it gets, **fix** solution status indicates high level of positioning precision
+Legend:  
+R - Glonass satellite  
+G - GPS satellite  
+S - SBAS satellite  
+E - Galileo satellite  
+J - QZSS satellite  
+B - Beidou satellite  
 
-#### Reading LED status
+When SNR of a satellite is over 45, it will be marked green. Grey bars indicate SNR of the base station. You should aim to achieve as many satellites signals in “green zone” as possible. That will make your measurements precise and ambiguity resolution (Fix) fast.  
+On the top of the SNR chart you can see indicators of numbers of satellites visible to rover and base receivers.
 
-During configuration and non-RTK solution status, Reach will show debug information with the LED in the following form:
+### RTK parameters
+**Age of differential**  
+In case of steady correction steam age of differential will indicate link latency. Calculated by subtracting time when the correction message has been generated from the current receiver time. It is an invaluable tool to debug connectivity issues.
 
-* <font color="white" style="background-color:black">White sync light, indicating message start</font>
-* Network mode
-    * <font color="blue">Wi-Fi Client</font>
-    * <font color="green">Wi-Fi Master</font>
-* RTK mode
-    * <font color="blue">Rover</font>
-    * <font color="magenta">Base</font>
-* Are we started?
-    * <font color="green">Yes</font>
-    * <font color="red">No</font>
-* Solution status (N/A to base)
-    * <font color="red">"-"</font>
-    * <font color="cyan">single</font>
+**AR validation ratio**  
+This is result of ratio test performed on the potential “Fix” solution, it shows how many times is the best solution better than the next one. If this number is more than 3 Reach will consider RTK solution Fixed. 
 
-After getting either float or fixed status, Reach LED will only show it with:
+**Baseline**  
+Baseline is the distance from rover to the base. It should be kept within 10km, if it is increased further you might experience slower fix time and lower accuracy. Accuracy is decreased by 1mm each km of baseline. 
+ 
+### Map
+Integrated map is used to show your current position. Map layer is provided by OpenStreetMap.  
+Available map features:
 
-* Float with <font color="green">green</font>/<font color="yellow" style="background-color:grey">yellow</font> blinks
-* Fix with <font color="green">green</font> blinks
++ Last point: zooms the map to the last point.
++ Clear map: deleted all current points on the map.
++ Hide background: removes OSM layer.
++ Follow: keeps focus on the last point.
++ Select number of points to show 100, 1000,10000.
+
+Point colors meaning:
+
++ Green - RTK Fix.
++ Yellow - RTK Float.
++ Red - Single.
+
+**Position**  
+WGS84 Latitude and Longitude as well as ellipsoidal height are displayed on the status tab. Position display format can be changed to XYZ ECEF.
+
+**Solution status**  
+"-" means there is no information for the software to process. Either not enough time has passed or the antenna is not placed correctly.  
+Single means that rover has found a solution relying on it's own receiver and base corrections are not applied. Configuring positioning mode to Single will also result in this status. Precision in standalone mode is on meters-level.
+Float means that base corrections are now taken into consideration and positioning is relative to base coordinates, but the integer ambiguity is not resolved. Precision in float mode is submeter-level.  
+Fix means that positioning is relative to the base and the integer ambiguity is resolved. Precision in standalone mode is centimeter-level.
+
+

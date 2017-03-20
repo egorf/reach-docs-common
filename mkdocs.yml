@@ -1,30 +1,25 @@
-site_name: Reach RTK docs
+site_name: Reachview docs
 theme_dir: docstheme
 site_favicon: favicon.ico
-repo_url: https://github.com/emlid/reach-docs
+repo_url: https://github.com/emlid/reachview-docs
+
 pages:
-- Reach: index.md
-- Introduction: introduction.md
-- Roadmap: roadmap.md
-- Kit contents: kit-contents.md
-- Quickstart: quickstart.md
-- Power supply: power-supply.md
-- Antenna placement: antenna-placement.md
-- ReachView app basics: reachview-basics.md
-- Rover configuration: reachview-rover.md
-- Setting up correction link: reachview-link.md
-- Solution output and logging: reachview-output.md
-- Monitoring status: reachview-status.md
-- Base configuration: reachview-base.md
-- Hardware integration: hardware-integration.md
-- ArduPilot integration: ardupilot-integration.md
-- GPS post-processing: gps-post-processing.md
-- Camera integration: camera-integration.md
-- PylonGPS: pylon-gps.md
-- Firmware reflashing: firmware-reflashing.md
-- Electrical specs: electrical-specs.md
-- Mechanical specs: mechanical-specs.md
-- Software development: software-development.md
-- Troubleshooting: troubleshooting.md
-- FAQ: faq.md
-- Changelogs: changelogs.md
+- ReachView:
+    - 'Introduction': 'index.md'
+    - 'Settings': 'reachview-settings.md'
+    - 'Status': 'reachview-status.md'
+    - 'RTK settings': 'reachview-rtk-settings.md'
+    - 'Correction input': 'reachview-correction-input.md'
+    - 'Position output': 'reachview-position-output.md'
+    - 'Base mode': 'reachview-base-mode.md'
+    - 'Logging': 'reachview-logging.md'
+    - 'Camera control': 'reachview-camera-control.md'
+    - 'Wi-fi/Bluetooth': 'reachview-connectivity.md'
+    - 'GNSS predictor': 'reachview-gnss-predictor.md'
+    - 'Firmware reflashing': 'reachview-firmware-reflashing.md'
+    - 'Changelogs': 'reachview-changelogs.md'
+    - 'LED status': 'reachview-led-status.md'
+
+ 
+
+
