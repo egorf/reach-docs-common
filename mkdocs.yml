@@ -1,24 +1,45 @@
-site_name: Reachview docs
-theme_dir: docstheme
+site_name: ReachView
+theme_dir: materialtheme
 site_favicon: favicon.ico
 repo_url: https://github.com/emlid/reachview-docs
+extra:
+  palette:
+    primary: 'light blue'
+    accent: 'light blue'
+  logo: 'img/logo.png'
+  social:
+    - type: 'github'
+      link: 'https://github.com/emlid'
+    - type: 'twitter'
+      link: 'https://twitter.com/emlidtech'
+    - type: 'facebook'
+      link: 'https://facebook.com/emlidtech' 
+  google_analytics:
+    - 'UA-49508097-6'
+    - 'auto'
+  markdown_extensions:
+    - admonition
+    - codehilite(guess_lang=false)
+    - toc(permalink=true)
 
+  copyright: 
+    - 'Copyright & copy; 2016 - 2017 Emlid Ltd.'   
+   
 pages:
-- ReachView:
-    - 'Introduction': 'index.md'
-    - 'Settings': 'reachview-settings.md'
-    - 'Status': 'reachview-status.md'
-    - 'RTK settings': 'reachview-rtk-settings.md'
-    - 'Correction input': 'reachview-correction-input.md'
-    - 'Position output': 'reachview-position-output.md'
-    - 'Base mode': 'reachview-base-mode.md'
-    - 'Logging': 'reachview-logging.md'
-    - 'Camera control': 'reachview-camera-control.md'
-    - 'Wi-fi/Bluetooth': 'reachview-connectivity.md'
-    - 'GNSS predictor': 'reachview-gnss-predictor.md'
-    - 'Firmware reflashing': 'reachview-firmware-reflashing.md'
-    - 'Changelogs': 'reachview-changelogs.md'
-    - 'LED status': 'reachview-led-status.md'
+- Introduction: index.md
+- Settings: reachview-settings.md
+- Status: reachview-status.md
+- 'RTK settings': 'reachview-rtk-settings.md'
+- 'Correction input': 'reachview-correction-input.md'
+- 'Position output': 'reachview-position-output.md'
+- 'Base mode': 'reachview-base-mode.md'
+- 'Logging': 'reachview-logging.md'
+- 'Camera control': 'reachview-camera-control.md'
+- 'Wi-fi/Bluetooth': 'reachview-connectivity.md'
+- 'GNSS predictor': 'reachview-gnss-predictor.md'
+- 'Firmware reflashing': 'reachview-firmware-reflashing.md'
+- 'Changelogs': 'reachview-changelogs.md'
+- 'LED status': 'reachview-led-status.md'
 
  
 
