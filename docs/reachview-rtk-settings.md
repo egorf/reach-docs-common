@@ -1,5 +1,7 @@
 ## RTK options
 
+![](img/rtk_settings/rtk_set.png)
+
 ### Positioning mode
 
 + Single - standalone positioning mode, does not provide improved precision.
@@ -27,6 +29,8 @@ On contrary to GPS, all GLONASS satellites transmit on different frequencies, wh
 - Set it according to what acceleration antenna experiences on your platform. If you are not sure about the correct value collect a dataset and use RTKPLOT to see what kind of accelerations are present in your application. Default value is 1 m/s^2.
 
 ## GNSS selection
+
+![](img/rtk_settings/gnss_sel.png)
 
 Depending on your location it might be beneficial to choose certain set of GNSS systems: 
 
