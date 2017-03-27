@@ -1,6 +1,6 @@
 Reach is able to trigger cameras as well as register events. Event mark feature is a must for aerial mapping as it allows to register precise time when shutter was activated.
 
-![](img/camera_control/camera.png)
+<p style="text-align:center" ><img src="../img/reachview/camera_control/camera.png" style="width: 800px;" /></p>
 
 ### Camera trigger
 Camera trigger is only available on Reach module and not available on Reach RS. By altering the duty cycle and period parameters you can match settings required for triggering your camera module. Real-time signal graph is shown on the same page. Note, that this feature does not have to be used if your autopilot is able to trigger the camera, as it has more information about the flight plan and can make more informed decisions on when to fire the camera. 

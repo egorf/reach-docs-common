@@ -2,13 +2,13 @@ ReachView supports four simultaneous logs streams. Full memory behaviour and log
 
 ### Raw data
 
-![](img/logging/raw.png)
+<p style="text-align:center" ><img src="../img/reachview/logging/raw.png" style="width: 800px;" /></p>
 
 Raw data is logged in UBX format, it could be converted to Rinex after download using RTKCONV utility. Event marks are stored in this file as well.
 
 ### Position
 
-![](img/logging/position.png)
+<p style="text-align:center" ><img src="../img/reachview/logging/position.png" style="width: 800px;" /></p>
 
 Position could be logged in different formats. 
 
@@ -29,13 +29,14 @@ Used for communication to Ardupilot, protocol description can be found [here](ht
 
 ### Base correction
 
-![](img/logging/base_correction.png)
+<p style="text-align:center" ><img src="../img/reachview/logging/base_correction.png" style="width: 800px;" /></p>
 
 Logs incoming correction from the base. Format is defined by correction input.
  
 ### Additional correction
 
-![](img/logging/additional.png)
+<p style="text-align:center" ><img src="../img/reachview/logging/additional.png" style="width: 800px;" /></p>
+
 
 Logs incoming additional correction. Format is defined by correction input.
 

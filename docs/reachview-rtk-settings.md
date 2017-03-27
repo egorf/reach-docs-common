@@ -1,6 +1,6 @@
 ## RTK options
 
-![](img/rtk_settings/rtk_set.png)
+<p style="text-align:center" ><img src="../img/reachview/rtk_settings/rtk_set.png" style="width: 800px;" /></p>
 
 ### Positioning mode
 
@@ -30,7 +30,7 @@ On contrary to GPS, all GLONASS satellites transmit on different frequencies, wh
 
 ## GNSS selection
 
-![](img/rtk_settings/gnss_sel.png)
+<p style="text-align:center" ><img src="../img/reachview/rtk_settings/gnss_sel.png" style="width: 800px;" /></p>
 
 Depending on your location it might be beneficial to choose certain set of GNSS systems: 
 

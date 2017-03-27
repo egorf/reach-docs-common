@@ -4,7 +4,7 @@ Configuring correction is required if you want to go beyond standalone positioni
 
 ### Serial
 
-![](img/correction_input/serial.png)
+<p style="text-align:center" ><img src="../img/reachview/correction_input/serial.png" style="width: 800px;" /></p>
 
 Serial port connection is available through several hardware connection options. All of them support following baud rates: 4800, 9600, 14400, 19200, 28800, 38400, 56000, 57600, 115200, 128000, 153600, 230400, 256000, 460800, 921600.
 
@@ -19,7 +19,7 @@ Use a micro-USB OTG cable to connect USB accessories. In this mode only USB devi
 
 ### NTRIP
 
-![](img/correction_input/ntrip.png)
+<p style="text-align:center" ><img src="../img/reachview/correction_input/ntrip.png" style="width: 800px;" /></p>
 
 NTRIP is industry standard way of transferring GNSS corrections over Internet, with ReachView you can use any public service or your own private caster. NTRIP does not support point-to-point communication e.g. you can not use it to transfer corrections from one Reach to another directly. In NTRIP terminology there are servers, clients and caster. Server sends correction to a caster and clients can receive them by connecting to that caster.
 
@@ -36,7 +36,8 @@ When connecting to a mount point that has VRS or Nearest feature, that automatic
 
 ### TCP
 
-![](img/correction_input/tcp.png)
+<p style="text-align:center" ><img src="../img/reachview/correction_input/tcp.png" style="width: 800px;" /></p>
+
 
 Typical scenario for using TCP correction input is when both base and rover are on the same network. Note that when devices are on different networks you can not send data directly unless public IP addresses are known and routers are setup for port forwarding. TCP can also be used to send data to or receive from a remote server with public IP.
 
@@ -52,7 +53,7 @@ If ReachView does not allow to set a certain port number it means that it is res
 
 ### LoRa (RS only)
 
-![](img/correction_input/Lora.png)
+<p style="text-align:center" ><img src="../img/reachview/correction_input/Lora.png" style="width: 800px;" /></p>
 
 Reach RS has internal LoRa radio which is used for receiving or sending corrections. The radio works only in one way, it could either be configured to send corrections (on base) or to receive them (on rover). Using LoRa modulation it is possible to hit up to 19km in line of sight or a few km in urban areas with just 20 dBm power output. As long as frequency and air rate settings match an unlimited number of rovers can listen for correction from the same base. 
 
@@ -61,5 +62,6 @@ Frequency and air rate settings must match what was configured on the base.
 ## Additional correction
 Will be used for precise ephemeris and clocks. Not implemented yet.
 
-![](img/correction_input/additional.png)
+<p style="text-align:center" ><img src="../img/reachview/correction_input/additional.png" style="width: 800px;" /></p>
+
 

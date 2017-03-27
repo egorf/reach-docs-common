@@ -1,6 +1,6 @@
 ## Correction output
 
-![](img/base_mode/output.png)
+<p style="text-align:center"><img src="../img/reachview/base_mode/output.png" style="width: 800px;"/></p>
 
 Reach outputs correction in industry standard RTCM3 format. Correction data can be sent via Serial, TCP, NTRIP or LoRa for Reach RS.
 
@@ -50,7 +50,9 @@ Make sure to select appropriate output power and frequency according to your loc
 
 ## RTCM3 messages
 
-![](img/base_mode/messages.png)
+<p style="text-align:center"><img src="../img/reachview/base_mode/messages.png" style="width: 800px;"/></p>
+
+
 
 |      |  Minimal required messages  |    @    |
 |------|-----------------------------|---------|
@@ -77,10 +79,21 @@ Make sure to select appropriate output power and frequency according to your loc
 
 The minimal subset that is required for RTK to function is 1002 for GPS observation and 1006 for base station position. Enabling more messages or higher rates requires higher connection bandwidth.
 
+Here is an estimation of bps when messages are configured at 1 Hz:
+
+|   RTCM3 messages   | Data rate, bps |
+|--------------------|----------------|
+|      1002, 1006    |      1150      |
+
+
+
+
+
+
 
 ## Base position
 
-![](img/base_mode/position.png)
+<p style="text-align:center"><img src="../img/reachview/base_mode/position.png" style="width: 800px;"/></p>
 
 There are two main options how to specify base station position. Note that RTK positioning is relative to the base station, so any inaccuracy in it’s position will result in a constant shift of rover coordinates. For many applications it is not critical and averaged single coordinate of the base could be used. If your application requires absolute accuracy for rover position an accurate  base coordinate must be entered.
 

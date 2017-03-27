@@ -1,17 +1,18 @@
 ### Check app version  
 Every time you power up Reach in a Wi-Fi network it will check for new ReachView update and notify you accordingly.
 
-![](img/settings/update_check.png)
+<p style="text-align:center" ><img src="../img/reachview/settings/update_check.png" style="width: 800px;" /></p>
 
 
-Note that the check is only done one time during boot process. If you want to force new version check please proceed to ReachView Updater. It is available on port 5000, for example http://reach.local:5000. It will automatically scan Emlid update servers when you open it.
+Note that the check is only done one time during boot process. If you want to force new version check please proceed to ReachView Updater. It is available on port 5000, for example `http://reach.local:5000`. It will automatically scan Emlid update servers when you open it.
 
-![](img/settings/update_check5000.png)
+<p style="text-align:center" ><img src="../img/reachview/settings/update_check5000.png" style="width: 350px;" /></p>
 
 ### Change Reach name  
-Reach name can be changed in order to distinguish between multiple devices. A very common pattern is to name devices according to their base or rover function. Device name is the base for hotspot name and local network name. The default name is “reach”, changing it will also affect local name “http://reach.local” and hotspot name “reach:xx:xx”.
+Reach name can be changed in order to distinguish between multiple devices. A very common pattern is to name devices according to their base or rover function. Device name is the base for hotspot name and local network name. The default name is “reach”, changing it will also affect local name `http://reach.local` and hotspot name `reach:xx:xx`.
 
-![](img/settings/settings.png)
+
+<p style="text-align:center" ><img src="../img/reachview/settings/settings.png" style="width: 800px;" /></p>
 
 ### Reset settings to default  
 Click “Reset setting to default” button to return all settings to factory configuration. Only logs and wireless settings are preserved. If you would like to perform a complete factory reset and wipe all your data you can [reflash firmware image]().

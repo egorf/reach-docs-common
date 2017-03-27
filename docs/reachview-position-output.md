@@ -1,7 +1,7 @@
 
 ### Formats
 
-![](img/position_output/format.png)
+<p style="text-align:center" ><img src="../img/reachview/position_output/format.png" style="width: 800px;" /></p>
 
 Reach supports following position output formats: 
 
