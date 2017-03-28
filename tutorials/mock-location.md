@@ -16,7 +16,7 @@ To use Reach with Android app you will need to do the following:
     To do this, make your device discoverable. Then, go to the **Wifi/Bluetooth Tab** and find your device in bluetooth section. Once your device appears in the "discoverable" section, hit it to send a pairing request. Accept the pairing request on your device. Your device will appear in the "paired devices section".
 
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/bluetooth.png" style="width: 800px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/bluetooth.png" style="width: 800px;"/></p>
 
 
 * In the "Position output Tab set position output to BT and format to **NMEA**
@@ -36,23 +36,23 @@ To connect Reach, do the following:
 
 * Open the app, go to the settings(gear in the upper right corner)
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/lefebure-main-screen.jpg" style="width: 300px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/lefebure-main-screen.jpg" style="width: 300px;"/></p>
 
 * Then go to receiver settings
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/lefebure-settings.jpg" style="width: 300px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/lefebure-settings.jpg" style="width: 300px;"/></p>
 
 !!! check "Inside Receiver Settings:" 
     1. Change Bluetooth device to the Reach you are paired with  
     2. Change Bluetooth Connection Method to **Secure via Reflection**  
     3. Enable **Mock location** if you need to  
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/lefebure-receiver-settings.jpg" style="width: 300px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/lefebure-receiver-settings.jpg" style="width: 300px;"/></p>
 
 * Go back to the main screen, hit **Connect** and watch the connection!
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/lefebure-connected.jpg" style="width: 300px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/lefebure-connected.jpg" style="width: 300px;"/></p>
 
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/bluetooth-gps-satellites.png" style="width: 300px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/bluetooth-gps-satellites.png" style="width: 300px;"/></p>
 
