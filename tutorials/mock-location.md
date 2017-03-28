@@ -24,7 +24,7 @@ To use Reach with Android app you will need to do the following:
 !!! tip
     Don't forget to Apply the new rover settings
 
-<p style="text-align:center"><img src="../img/reachview/lefebure/solution.png" style="width: 800px;"/></p>
+<p style="text-align:center"><img src="../img/reach/mock-location/solution.png" style="width: 800px;"/></p>
 
 ## Android mock location
 

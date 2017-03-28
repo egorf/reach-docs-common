@@ -17,19 +17,19 @@ Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b27.exe) aft
 * Add your rover raw log in the first field and choose output directory.
 * Choose format of your log in pop-down menu. Set format to u-blox if logs downloaded from each device. Otherwise, choose RTCM3 if base and rover logs were recieved from rover.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkconv_format.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_format.png" style="width: 600px;"></div>
 
 * Push "Options" button.
 * Choose "RINEX Version" 3.03.
 * Turn on "Satellites Systems" you need.
 * Press "OK" and "Convert" after.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkconv_options.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_options.png" style="width: 600px;"></div>
 
 Now you should repeat the same with base log. Don't forget to change format. 
 After that you'll see something similar in your output folder.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkconv_output_folder.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_output_folder.png" style="width: 600px;"></div>
 
 
 ### Calculating base position
@@ -41,73 +41,73 @@ Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b27.exe) sof
 * Put base or rover .nav file in the third field.
 * (Optional) You can as well add precise ephemeresis and clocks at this stage. They are required for long baselines.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_adding_files.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_adding_files.png" style="width: 600px;"></div>
 
 
 Now proceed to the options by pushing "Options" button.
 
 * Set positioning mode you need. Usually it's "Kinematic" or "Static".
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_setting1_mode.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting1_mode.png" style="width: 600px;"></div>
 
 
 * Choose "Elevation Mask" value. Usually it's 15-20.
 * Push "SNR Mask" button and set the value you need. This will help you to avoid satellites with low signal strength.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_setting1_mask.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting1_mask.png" style="width: 600px;"></div>
 
 
 * Turn on "Rec Dynamics" to estimate reciever velocity and acceleration. Use it for DGPS/DGNSS or Kinematic modes.
 * Select used navigation systems.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_setting1_dynamics.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting1_dynamics.png" style="width: 600px;"></div>
 
 
 * Go to the "Setting2" tab.
 * Set "Integer Ambiguity Res" to Fix and Hold. In this mode continuously static integer ambiguities are estimated and resolved. If the validation OK, the ambiguities are tightly constrained to the resolved values.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_setting2_ambiguity.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting2_ambiguity.png" style="width: 600px;"></div>
 
 
 * Set "Max Pos Var for AR" and turn on "AR Filter" on the right.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_setting2_ar.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting2_ar.png" style="width: 600px;"></div>
 
 
 * Switch to "Positions" tab.
 * Select "Base Station". Choose "Average of Single Position" for any log to average single point solution or "RINEX Header Position" to use approximate position in RINEX .obs header.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_positions_base.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_positions_base.png" style="width: 600px;"></div>
 
 
 * Press "OK" button and "Execute" in the main window.
 * You'll see green process bar. Wait untill "done" label. It could take quiet a lot of time if your logs are big. In that case window could not answer. Just chill and relax.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_execute.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_execute.png" style="width: 600px;"></div>
 
 
 After that you'll see something similar in your output folder. The .pos file with "__event" will contain timestamps if you had them during your job.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkpost_output_folder.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_output_folder.png" style="width: 600px;"></div>
 
 ## Result visualization and analysis
 
 Open [RTKLIB RTKPLOT](https://github.com/tomojitakasu/RTKLIB_bin/raw/rtklib_2.4.3/bin/rtkplot.exe) and drag and drop your .pos file.
 If you see green points that mean that they're fix (Q=1), orange mean float (Q=2), red - single (Q=5).
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkplot_pos.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_pos.png" style="width: 600px;"></div>
 
 
 After that you could add .obs file to see more analyzing tools in pop-down menu.
 For example, first image shows "Satellite Visibility" and second one "Position" in 3 directions.
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkplot_satvis.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_satvis.png" style="width: 600px;"></div>
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkplot_position.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_position.png" style="width: 600px;"></div>
 
 If you've got timemarks add them as a Soulution-2 (File -> Open Solution2).
 
-<div style="text-align: center;"><img src="../img/reachview/post-processing/rtkplot_timemarks.png" style="width: 600px;"></div>
+<div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_timemarks.png" style="width: 600px;"></div>
 
 
 Looks really good, isn't it?
