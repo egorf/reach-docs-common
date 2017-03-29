@@ -4,7 +4,7 @@ On this page you will find the information on how to reflash Reach firmware.
 Please note that you don't need to do this unless you want to bring Reach to its initial state or new firmware image version is released.
 Most new features are released via ReachView app updates that can be updated simply by pressing an "Update" button in its interface.
 !!! note ""
-    More information on how to update ReachView app is available in [ReachView app docs section](reachview/).
+    More information on how to update ReachView app is available in [ReachView app docs section](/common/reachview/).
 
 ### Emlid Reach RTK firmware download
 

@@ -1,4 +1,4 @@
-<p style="text-align:center"><img src="../img/reachview/introduction/reachview.gif" style="width: 550px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reachview.gif" style="width: 550px;"/></p>
 
 ## About 
 
@@ -12,7 +12,7 @@ ReachView app is served via a browser. In order to access the app one needs to f
 
 Your device must be connected to the same Wi-Fi network as Reach. Reach will show up as "Murata Manufacturing" device.
 
-<p style="text-align:center"><img src="../img/reachview/introduction/fing.png" style="width: 500px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/fing.png" style="width: 500px;"/></p>
 
 #### Windows
 Access ReachView by typing “http://reach.local” in your browser. If you have changed name of the device, please type “http://device_name.local”. If the name could not be resolved:
@@ -62,13 +62,13 @@ After connecting to the network hosted by reach, open a web browser on your smar
 
 Type http://192.168.42.1 in the address bar and you will see ReachView Updater.
 
-<p style="text-align:center"><img src="../img/reachview/introduction/reach_view_updater_main.png" style="width: 350px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_main.png" style="width: 350px;"/></p>
 
 Press plus button and enter your Wi-Fi network name, security type and password. Press Save button. That will make Reach remember your Wi-Fi network.
-<p style="text-align:center"><img src="../img/reachview/introduction/reach_view_updater_wifi.png" style="width: 350px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_wifi.png" style="width: 350px;"/></p>
 
 Press on your added network and click Connect.
-<p style="text-align:center"><img src="../img/reachview/introduction/reach_view_updater_wifi_connect.png" style="width: 450px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_wifi_connect.png" style="width: 450px;"/></p>
 
 
 Reach device will now attempt to connect to your Wi-Fi network. You should connect your device to that network too.
@@ -78,7 +78,7 @@ If Reach did not connect to Wi-Fi network it will automatically switch to hotspo
 ### Updating
 
 If connection to Wi-Fi was successful you can [now find Reach on your network](/#resolving-ip) and open ReachView. During first setup you will see the ReachView Updater. It is a separate app that handles self-testing, time synchronization and updates of the main ReachView app.
-<p style="text-align:center"><img src="../img/reachview/introduction/reach_view_updater_finish.png" style="width: 350px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reach_view_updater_finish.png" style="width: 350px;"/></p>
 
 ReachView updater will check for software updates and will install them.
 
@@ -86,4 +86,4 @@ Press Reboot and go to the app! button. Wait while device reboots.
 
 In about a minute refresh the page with ReachView app.
 
-<p style="text-align:center"><img src="../img/reachview/introduction/reach_view_app.png" style="width: 500px;"/></p>
+<p style="text-align:center"><img src="img/reachview/introduction/reach_view_app.png" style="width: 500px;"/></p>

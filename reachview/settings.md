@@ -15,10 +15,10 @@ Reach name can be changed in order to distinguish between multiple devices. A ve
 <p style="text-align:center" ><img src="../img/reachview/settings/settings.png" style="width: 800px;" /></p>
 
 ### Reset settings to default  
-Click “Reset setting to default” button to return all settings to factory configuration. Only logs and wireless settings are preserved. If you would like to perform a complete factory reset and wipe all your data you can [reflash firmware image]().
+Click “Reset setting to default” button to return all settings to factory configuration. Only logs and wireless settings are preserved. If you would like to perform a complete factory reset and wipe all your data you can [reflash firmware image](firmware-reflashing).
 
 ### Change hotspot password
-Default hotspot password is “emlidreach”, you can change it for security reasons. If you forget your new hotspot password you can still access Reach by bringing it to a known Wi-Fi network. If you lost access to Reach you can [reflash firmware image](firmware reflashing) and set it up again.
+Default hotspot password is “emlidreach”, you can change it for security reasons. If you forget your new hotspot password you can still access Reach by bringing it to a known Wi-Fi network. If you lost access to Reach you can [reflash firmware image](firmware-reflashing) and set it up again.
 
 ### Logging settings
 Full memory behaviour

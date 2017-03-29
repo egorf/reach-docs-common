@@ -1,4 +1,4 @@
-ReachView supports four simultaneous logs streams. Full memory behaviour and log split period could be specified in the [settings](reachview-settings/). Every log stream has enable/disable logic, once enabled logs will be written even if you restart the device. After restart new log file will be automatically created.
+ReachView supports four simultaneous logs streams. Full memory behaviour and log split period could be specified in the [settings](settings/). Every log stream has enable/disable logic, once enabled logs will be written even if you restart the device. After restart new log file will be automatically created.
 
 ### Raw data
 
