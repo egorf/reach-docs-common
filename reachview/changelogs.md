@@ -1,5 +1,18 @@
 ## ReachView changelog
 
+### v2.2.7 
+([release](https://community.emlid.com/t/reachview-v2-2-7/5523))
+
+##### Features
+
+* 3G/LTE USB modem support
+
+##### Bug fix
+
+* Fixed an app crash, which happened if you turn off the base output configured to use LoRa
+* Reworked USB-OTG on Reach RS. It didn't function properly on the pre-production units, but now those days are in the past
+
+
 ### v2.2.5 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
