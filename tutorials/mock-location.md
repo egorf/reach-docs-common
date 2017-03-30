@@ -54,5 +54,5 @@ To connect Reach, do the following:
 <p style="text-align:center"><img src="../img/reach/mock-location/lefebure-connected.jpg" style="width: 300px;"/></p>
 
 
-<p style="text-align:center"><img src="../img/reach/mock-location/bluetooth-gps-satellites.png" style="width: 300px;"/></p>
+Now coordinated in your Android device are replaced with coordinates from Reach / Reach RS and you can use them in any app.
 
