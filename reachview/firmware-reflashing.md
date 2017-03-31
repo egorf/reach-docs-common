@@ -1,24 +1,17 @@
 ## When to reflash the firmware
 
 On this page you will find the information on how to reflash Reach firmware.
-Please note that you don't need to do this unless you want to bring Reach to its initial state or new firmware image version is released.
+Please note that you don't need to do this unless you want to bring Reach to its initial state or new firmware image version is released. If your Reach has ReachView version 0.4.9 it is necessary to reflash it with new firmware image in order to receive updates and support.
+
 Most new features are released via ReachView app updates that can be updated simply by pressing an "Update" button in its interface.
 !!! note ""
     More information on how to update ReachView app is available in [introduction section](/#updating).
 
 ### Emlid Reach RTK firmware download
 
-We provide a special, enhanced Intel Edison image with following changes:
+You can get the latest version here:
 
-* Pre-installed software, including RTKLIB, ReachView, socat and more
-* Wi-Fi setup service(Creates an access point, if no known WiFi networks are found)
-* Created user "reach" with set up passwords, permissions, etc.
-
-While Reach units are flashed before shipping, we plan to update the image in the future. You can get the latest version here:
-
-[**Reach Image v1.2**](https://files.emlid.com/images/ReachImage_v1.2.zip)
-
-[**Reach Image v2.3(beta)**](https://files.emlid.com/images/ReachImage_v2.3.zip)
+[**Reach Image v2.3**](https://files.emlid.com/images/ReachImage_v2.3.zip)
 
 There are two ways to flash the image. Intel's Edison Board Configuration Tool and a CLI script.
 
@@ -114,7 +107,7 @@ To flash:
 
 After the initial process is done, Reach will reboot. **Do not unplug it until it reboots and goes through the initial setup process completely**.
 
-Since image version **1.2**, the LED signals during startup are as follows:
+Since image version **1.2**, the LED signals on Reach during startup are as follows:
 
 * <font color="magenta">Magenta</font> during device boot
 * Off, then White for a second to show script start
