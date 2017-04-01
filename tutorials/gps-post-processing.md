@@ -4,10 +4,10 @@ This tutorial requires:
 
 * Raw logs from the rover
 * Raw logs from the base
-* (Optional) For absolute positioning: RINEX observations log from a reference station in a range of 100km
+* (Optional) For absolute positioning: RINEX observations log from a reference station in range of 100 km
 * (Optional) For processing improvement: precise ephemeris and clock files from the IGS
 
-Rover track is calculated relatively to the base station so in order to get rover track with correct absolute coordinates the exact position of the base station should be known. You either need to place base station on a point with known coordinate or determine it by post-processing base against a reference station in static mode. It is better if the station is within 100km range, but longer range might work as well.
+Rover track is calculated relatively to the base station so in order to get rover track with correct absolute coordinates the exact position of the base station should be known. You either need to place base station on a point with known coordinate or determine it by post-processing base against a reference station in static mode. It is better if the station is within 100 km range, but longer range might work as well.
 
 
 ## Converting raw logs to RINEX
@@ -15,7 +15,7 @@ Rover track is calculated relatively to the base station so in order to get rove
 Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b27.exe) after downloading raw files from Reach to your PC.
 
 * Add your rover raw log in the first field and choose output directory.
-* Choose format of your log in pop-down menu. Set format to u-blox if logs downloaded from each device. Otherwise, choose RTCM3 if base and rover logs were recieved from rover.
+* Choose format of your log in pop-down menu. Set format to u-blox if logs downloaded from each device. Otherwise, choose RTCM3 if base and rover logs were received from rover.
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_format.png" style="width: 600px;"></div>
 
@@ -26,7 +26,7 @@ Start [RTKLIB RTKCONV](https://files.emlid.com/RTKLIB/rtkconv_emlid_b27.exe) aft
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_options.png" style="width: 600px;"></div>
 
-Now you should repeat the same with base log. Don't forget to change format. 
+Now you should repeat the same with base log. Don't forget to change format.
 After that you'll see something similar in your output folder.
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkconv_output_folder.png" style="width: 600px;"></div>
@@ -34,12 +34,12 @@ After that you'll see something similar in your output folder.
 
 ### Calculating base position
 
-Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b27.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Kinematic or Static in the options to unlock the fields for base staiton data. You can skip the start time, it is not compulsory.
+Start [RTKLIB RTKPOST](https://files.emlid.com/RTKLIB/rtkpost_emlid_b27.exe) software and enter the fields as shown here. If running for the first time you will need to set mode to Kinematic or Static in the options to unlock the fields for base station data. You can skip the start time, it is not compulsory.
 
 * Choose rover .obs file for the Rover field (RINEX file from your rover).
 * Select base station .obs file for the Base Station field (RINEX file from your base).
 * Put base or rover .nav file in the third field.
-* (Optional) You can as well add precise ephemeresis and clocks at this stage. They are required for long baselines.
+* (Optional) You can as well add precise ephemeris and clocks at this stage. They are required for long baselines.
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_adding_files.png" style="width: 600px;"></div>
 
@@ -57,7 +57,7 @@ Now proceed to the options by pushing "Options" button.
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting1_mask.png" style="width: 600px;"></div>
 
 
-* Turn on "Rec Dynamics" to estimate reciever velocity and acceleration. Use it for DGPS/DGNSS or Kinematic modes.
+* Turn on "Rec Dynamics" to estimate receiver velocity and acceleration. Use it for DGPS/DGNSS or Kinematic modes.
 * Select used navigation systems.
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_setting1_dynamics.png" style="width: 600px;"></div>
@@ -81,7 +81,7 @@ Now proceed to the options by pushing "Options" button.
 
 
 * Press "OK" button and "Execute" in the main window.
-* You'll see green process bar. Wait untill "done" label. It could take quiet a lot of time if your logs are big. In that case window could not answer. Just chill and relax.
+* You'll see green process bar. Wait until "done" label. It could take quite a lot of time if your logs are big. In that case window could not answer. Just chill and relax.
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkpost_execute.png" style="width: 600px;"></div>
 
@@ -105,7 +105,7 @@ For example, first image shows "Satellite Visibility" and second one "Position" 
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_position.png" style="width: 600px;"></div>
 
-If you've got timemarks add them as a Soulution-2 (File -> Open Solution2).
+If you've got time marks add them as a Solution-2 (File -> Open Solution2).
 
 <div style="text-align: center;"><img src="../img/reach/post-processing/rtkplot_timemarks.png" style="width: 600px;"></div>
 
@@ -137,7 +137,7 @@ After computation is over press Plot to see the track. We got the base coordinat
 
 ### Calculating rover track
 
-Browse to the rover obs (Rinex from your rover Reach), to the base station obs (Rinex from the base Reach) and to the nav (Rinex from your base Reach). 
+Browse to the rover obs (Rinex from your rover Reach), to the base station obs (Rinex from the base Reach) and to the nav (Rinex from your base Reach).
 
 ![image](img/post-processing/Post7.PNG)
 
