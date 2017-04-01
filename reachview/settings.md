@@ -22,7 +22,7 @@ Default hotspot password is “emlidreach”, you can change it for security rea
 
 ### Logging settings
 Full memory behaviour
-Specify how ReachView will handle full memory behaviour here, it can either stop logging or override old logs in favour of new ones. In most cases “rolling logs” is recommended.
+Specify how ReachView will handle full memory behavior here, it can either stop logging or override old logs in favour of new ones. In most cases “rolling logs” is recommended.
 
 ### Log split period
 New log file will be created every N hours, while preserving previous log as well. This setting allows you to control the size of the files that you work with.
