@@ -1,6 +1,7 @@
-<p style="text-align:center" ><img src="../img/reachview/connectivity/connect.png" style="width: 800px;" /></p>
-
 ## Wi-Fi
+
+<p style="text-align:center" ><img src="../img/reachview/connectivity/wifi.png" style="width: 800px;" /></p>
+
 
 To add a Wi-Fi network click on the blue plus sign, enter your Wi-Fi credentials and click create. 
 
@@ -14,6 +15,9 @@ During power up Reach will search for known Wi-Fi networks and if it does not se
 
 
 ## Bluetooth
+
+<p style="text-align:center" ><img src="../img/reachview/connectivity/bluetooth.png" style="width: 800px;" /></p>
+
 
 When Bluetooth is on it is constantly scanning for other devices. To pair your smartphone or PC with Reach make your device discoverable. Once your device appears in the "discoverable" section, click on it to send a pairing request. Accept the pairing request on your device. Your device will appear as paired.
 
