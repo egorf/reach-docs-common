@@ -18,7 +18,7 @@
 
 * 3G/LTE USB modem support
 
-##### Bug fix
+##### Bug fixes
 
 * Fixed an app crash, which happened if you turn off the base output configured to use LoRa
 * Reworked USB-OTG on Reach RS. It didn't function properly on the pre-production units, but now those days are in the past
@@ -27,7 +27,7 @@
 ### v2.2.5 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
-##### Bug fix
+##### Bug fixes
 
 * NTRIP issues fix
 * Patch ERB to include correct geoid and ellipsoid heights
@@ -44,7 +44,7 @@
 ### v2.2.3 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
-##### Bug fix
+##### Bug fixes
 
 * Fix bug of Reach crashing after a short period of work time
 
@@ -52,7 +52,7 @@
 ### v2.2.2 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
-##### Bug fix
+##### Bug fixes
 
 * Fixed RTKLIB memory leak
 * LoRa driver has got a heavy update
@@ -63,7 +63,7 @@
 ### v2.2.1 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
-##### Bug fix
+##### Bug fixes
 
 * The logs will not act insane when opening the logs tab
 * Solution will not get lost
@@ -74,7 +74,7 @@
 ### v2.2 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-2-5/4988))
 
-##### Bug fix
+##### Bug fixes
 * Fixed wrong log split time
 * Caching issues. While this is not a complete fix yet, this seriously improves the overall experience
 * App prevented from crashing due to empty configuration files
@@ -90,7 +90,7 @@
 ### v2.1.6 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-1-6-is-out/4664))
 
-##### Bug fix
+##### Bug fixes
 * Added units for the max acceleration settings
 * Logging page reapplies logging settings
 
@@ -110,7 +110,7 @@
 ### v2.1.4 beta
 ([release](https://community.emlid.com/t/reachview-beta-v2-1-5-update/4544))
 
-##### Bug fix
+##### Bug fixes
 * In-app connect to open wi-fi validation fails
 * Loading screen disappears too early
 * Logging: delete is glitchy with multiple files
@@ -127,7 +127,7 @@
 ### v2.1.3 beta
 ([release](https://community.emlid.com/t/reachview-2-beta-v2-1-3-and-new-image/4495))
 
-##### Bug fix
+##### Bug fixes
 * Disconnect not always working properly
 * Make more informative disconnect notifications
 * Implement NTRIP Server for base mode
@@ -149,7 +149,7 @@
 ### v2.1.1 beta
 ([release](https://community.emlid.com/t/reachview-2-beta-v2-1-1/4404))
 
-* Bug Fixes
+* Bug fixes
 * Updater progress bar implemented
 * Added loading screen
 
