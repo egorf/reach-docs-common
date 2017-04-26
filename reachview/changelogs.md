@@ -1,6 +1,17 @@
 ## ReachView changelog
 
-### v2.2.7 
+### v2.3.0
+([release](https://community.emlid.com/t/reachview-v2-3-0-point-collection/5855/16))
+
+###### Features
+
+* Point collection support
+* Collection screen with a realtime progress indicator, RTK and averaging statuses
+* Collect the points either manually or with project-wide auto-save rules
+* Project view with a map and summary point list
+* Export your data to DXF, GeoJSON, Esri shapefiles
+
+### v2.2.7
 ([release](https://community.emlid.com/t/reachview-v2-2-7/5523))
 
 ##### Features
